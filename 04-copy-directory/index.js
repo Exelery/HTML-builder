@@ -1,4 +1,3 @@
-const process = require("process")
 const {join} = require('node:path')
 const { mkdir, readdir, copyFile, rm } = require('node:fs/promises');
 
