@@ -31,8 +31,10 @@ async function buildPage(){
     if(extname(e) == ".html"){
       template = template.replace(`{{${e.split(".")[0]}}}`, component)
     }
-    
+        
   }
+  const re = /({{()(.*?)}})/g
+  template = template.replace(re, "")
   
   const indexPath = join(dest, "index.html")
   const streamWrite = fs.createWriteStream(indexPath,{flags: "w", encoding: "utf8"})
