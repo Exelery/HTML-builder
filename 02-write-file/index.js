@@ -23,6 +23,7 @@ rl.on("line", (line)=>{
     process.exit()
   }
   stream.write(line + "\n")
+  console.log(line, "added to file" )
 })
 
 

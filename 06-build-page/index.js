@@ -1,8 +1,8 @@
 const {join, extname} = require('node:path')
 const {readdir, readFile, mkdir, rm} = require('node:fs/promises');
 const fs = require("fs")
-const merge = require("../05-merge-styles/merge")
-const copyDir = require("../04-copy-directory/copyDir")
+const merge = require("../05-merge-styles/index")
+const copyDir = require("../04-copy-directory/index")
 
 
 
