@@ -19,7 +19,7 @@ process.on("exit", ()=>{
 })
 
 rl.on("line", (line)=>{
-  if(line == "exit"){
+  if(line.trim() == "exit"){
     process.exit()
   }
   stream.write(line + "\n")
